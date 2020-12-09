@@ -1,0 +1,21 @@
+
+  <div class="jumbotron">
+    <h1 class="display-4"><%= @friend.name %></h1>
+  <!--  <p class="lead"> component for cnformation.</p>-->
+    <hr class="my-4">
+    <p style="font-size: larger"> <strong>Email:</strong>
+      <%= @friend.email %>
+    </p>
+
+    <p style="font-size: larger"> <strong>Phone:</strong>
+      <%= @friend.phone %>
+    </p>
+
+    <br/>
+    <%= link_to 'Edit', edit_friend_path(@friend) ,class:"btn btn-secondary"%>
+
+    <%= link_to 'Back', friends_path , class:"btn btn-secondary"%>
+  </div>
+
+
+
